@@ -6,9 +6,6 @@ socket.on('connected', function(){
 socket.on('disconnect', function(){
 	dialogue.innerHTML = "Socket Disconnected";
 });
-socket.on('opened', function(){
-	dialogue.innerHTML = "Connected to Arduino";
-});
 socket.on('data', function (data) {
 	box.innerHTML = data;
 	angle = data;
