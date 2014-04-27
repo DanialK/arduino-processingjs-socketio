@@ -3,6 +3,9 @@ var box = document.getElementById('angle');
 socket.on('connected', function(){
 	dialogue.innerHTML = "Socket Connected";
 });
+socket.on('disconnect', function(){
+	dialogue.innerHTML = "Socket Disconnected";
+});
 socket.on('opened', function(){
 	dialogue.innerHTML = "Connected to Arduino";
 });
