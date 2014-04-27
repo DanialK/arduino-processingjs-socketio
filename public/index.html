@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+	<script src="/bower_components/socket.io-client/dist/socket.io.min.js"></script>
+	<script src="/bower_components/Processing.js/processing.min.js"></script>
+	<script>
+		var socket = io.connect('http://localhost');
+		var angle = 0;
+	</script>
+</head>
+<body>
+	<h1 id="dialogue"></h1>
+	<h1 id="angle"></h1>
+	<canvas id="tree" data-processing-sources="tree.pde"></canvas>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
